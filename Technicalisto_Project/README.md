@@ -47,5 +47,26 @@
 
 7. In viewDidLoad Call this function for check 
 
+       if UserDefaults.standard.string(forKey: "rememberMe") == "1" {
+    
+        if let image = UIImage(named: "check") {
+        rememberBtn.setBackgroundImage(image, for: .normal)
+         }
+    
+        AgreeIconClick = true
+    
+        // Set values
+                 self.userMailTxt.text = UserDefaults.standard.string(forKey: "userMail") ?? ""
+                 self.passwordTxt.text = UserDefaults.standard.string(forKey: "userPassword") ?? ""
+    
+        }else{
+    
+        if let image = UIImage(named: "un_check") {
+        rememberBtn.setBackgroundImage(image, for: .normal)
+        }
+    
+        AgreeIconClick = false
+       }
+
 ### Thanks
 
