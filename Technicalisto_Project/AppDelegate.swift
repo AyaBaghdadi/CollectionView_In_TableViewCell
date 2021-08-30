@@ -1,8 +1,5 @@
 //
-//  AppDelegate.swift
-//  Technicalisto_Project
-//
-//  Created by OSX on 19/08/2021.
+//  Created by Technicalisto.
 //
 
 import UIKit
